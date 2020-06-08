@@ -1,0 +1,36 @@
+
+=====================================
+    This is a sample application
+    used to demonstrate various
+    Android Architecture Components
+    open source libraries, and
+    Kotlin features
+=====================================
+source code could be found:
+https://github.com/cybo42/HealthyLivingApp
+
+The application makes use of
+The New York Times open APIs
+
+* Android Architecture Components used
+---------------------------------------
+- Data Binding
+- Lifecycle
+- LiveData
+- Room
+- ViewModel
+- Navigation Component
+
+
+* Open source libraries
+---------------------------------------
+- Flipper - debugging
+- Glide - image loading
+- Koin - dependency injection
+- Material Design - design and style components
+- Moshi - JSON processing
+- Retrofit & OkHttp - HTTP / API network access
+
+* Kotlin
+---------------------------------------
+- Coroutines - Reactive

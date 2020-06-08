@@ -3,29 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/topHealthStoriesFragment">
+
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.cybo42.healthyliving.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
-
+        android:id="@+id/topHealthStoriesFragment"
+        android:name="com.cybo42.healthyliving.ui.topstories.TopHealthStoriesFragment"
+        android:label="Top Health Stories"
+        tools:layout="@layout/top_health_stories_fragment" >
         <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_gallery" />
+            android:id="@+id/action_topStories_to_article"
+            app:destination="@id/articleFragment" />
     </fragment>
-
-
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.cybo42.healthyliving.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/articleFragment"
+        android:name="com.cybo42.healthyliving.ui.article.ArticleFragment"
+        android:label=""
+        tools:layout="@layout/article_fragment" >
+        <argument
+            android:name="article"
+            app:argType="com.cybo42.healthyliving.ui.model.GenericArticle" />
+    </fragment>
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.cybo42.healthyliving.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/savedArticlesFragment"
+        android:name="com.cybo42.healthyliving.ui.saved.SavedArticlesFragment"
+        android:label="Saved Articles"
+        tools:layout="@layout/saved_articles_fragment" >
+        <action
+            android:id="@+id/action_savedArticles_to_article"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.cybo42.healthyliving.ui.AboutFragment"
+        android:label="@string/about_header"
+        tools:layout="@layout/fragment_about" />
 </navigation>

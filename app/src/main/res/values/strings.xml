@@ -12,4 +12,14 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
+    <string name="share_message">You should check out this article:  %1$s</string>
+    <string name="delete">Delete</string>
+    <string name="retry">Retry</string>
+    <string name="share">share</string>
+    <string name="save">save</string>
+    <string name="top_stories">Top Stories</string>
+    <string name="saved_articles">Saved Articles</string>
+    <string name="article_saved">Article Saves</string>
+
+    <string name="about_header">About this App</string>
 </resources>
